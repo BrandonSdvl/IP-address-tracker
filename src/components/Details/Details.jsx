@@ -1,21 +1,21 @@
-const Details = () => {
+const Details = ({ dataIp }) => {
     return (
         <ul className={"details"}>
             <li className={"details__item"}>
                 IP Address
-                <span>192.168.0.1</span>
+                <span>{dataIp.ip}</span>
             </li>
             <li className={"details__item"}>
                 Location
-                <span>Brooklyn</span>
+                <span>{dataIp.location}</span>
             </li>
             <li className={"details__item"}>
                 Timezone
-                <span>UTC-</span>
+                <span>{dataIp.timezone}</span>
             </li>
             <li className={"details__item"}>
                 ISP
-                <span>SpaceX</span>
+                <span>{dataIp.isp}</span>
             </li>
         </ul>
     )
