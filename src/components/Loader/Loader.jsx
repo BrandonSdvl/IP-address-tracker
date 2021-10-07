@@ -1,11 +1,14 @@
-import './Loader.css'
+import "./Loader.scss";
 
 const Loader = () => {
-    return (
-        <div>
-            <div className="lds-ripple"><div></div><div></div></div>
-        </div>
-    )
-}
+  return (
+    <div className={"loader"}>
+      <div className="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  );
+};
 
-export default Loader
+export default Loader;

@@ -1,0 +1,40 @@
+@import '../../sass/colors';
+
+.details {
+    background-color: #fff;
+    z-index: 100;
+    width: 90%;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: absolute;
+    top: 140px;
+    left: 0;
+    right: 0;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        font-size: 10px;
+        color: $dark-gray;
+        font-weight: 500;
+
+        span {
+            margin-top: 5px;
+            color: $very-dark-gray;
+            text-transform: none;
+            font-size: 18px;
+        }
+    }
+}

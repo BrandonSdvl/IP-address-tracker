@@ -65,8 +65,14 @@ function App() {
         <Error />
       ) : (
         <>
-          <Details dataIp={dataIp} />
-          {dataIp === "" ? <Loader /> : <Map dataIp={dataIp} />}
+          {dataIp === "" ? (
+            <Loader />
+          ) : (
+            <>
+              <Details dataIp={dataIp} />
+              <Map dataIp={dataIp} />
+            </>
+          )}
         </>
       )}
     </div>

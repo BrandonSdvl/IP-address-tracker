@@ -1,0 +1,14 @@
+@import '../../sass/colors';
+
+.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $very-dark-gray;
+    height: 200px;
+    padding: 0 40px;
+
+    &__icon {
+        margin-right: 40px;
+    }
+}
