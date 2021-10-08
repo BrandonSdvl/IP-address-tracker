@@ -37,7 +37,7 @@
     &__input {
         width: calc(90% - 50px);
         padding: 15px;
-        font-size: 18px;
+        font-size: 13px;
         background-color: #fff;
         border: none;
         border-radius: 15px 0 0 15px;
@@ -45,6 +45,7 @@
 
         @include tablet {
             width: 60%;
+            font-size: 18px;
         }
 
         @include laptop {
@@ -56,10 +57,20 @@
         background-color: #000;
         border: none;
         width: 50px;
-        height: 52px;
+        height: 45px;
         background-image: url('../../assets/icon-arrow.svg');
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 0 15px 15px 0;
+        transition: background-color .2s ease;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $very-dark-gray;
+        }
+
+        @include tablet {
+            height: 52px;
+        }
     }
 }

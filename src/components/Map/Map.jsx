@@ -9,6 +9,7 @@ import marker from "../../assets/icon-location.svg";
 import L from "leaflet";
 
 import "./Map.scss";
+import { memo } from "react";
 
 const Map = ({ dataIp }) => {
   let { coords } = dataIp;
@@ -39,4 +40,4 @@ const Map = ({ dataIp }) => {
   );
 };
 
-export default Map;
+export default memo(Map);

@@ -7,6 +7,7 @@ const Header = ({ ip, setIp, getIpLocation }) => {
 
     if (!ip) {
       alert("Enter an IP");
+      return;
     }
 
     if (isValidIP(ip)) {
