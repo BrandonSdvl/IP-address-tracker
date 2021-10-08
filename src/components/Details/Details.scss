@@ -18,7 +18,7 @@
 
     @include laptop {
         top: 165px;
-        width: 80%;
+        width: 75%;
     }
 
     &__container {
@@ -40,6 +40,10 @@
             align-items: center;
             justify-content: space-around;
         }
+
+        @include laptop {
+            padding: 30px;
+        }
     }
 
 
@@ -50,6 +54,7 @@
         font-size: 10px;
         color: $dark-gray;
         font-weight: 500;
+        letter-spacing: 1px;
 
         @include tablet {
             height: 100%;
@@ -58,7 +63,7 @@
         }
 
         @include laptop {
-            font-size: 15px;
+            font-size: 13px;
         }
 
         span {
@@ -66,11 +71,12 @@
             color: $very-dark-gray;
             text-transform: none;
             font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 0;
 
             @include laptop {
                 margin-top: 10px;
                 font-size: 23px;
-                font-weight: 700;
             }
         }
     }

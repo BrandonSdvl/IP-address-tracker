@@ -2,7 +2,7 @@ import "./Details.scss";
 
 const Details = ({ dataIp }) => {
   return (
-    <div className={"details"}>
+    <main className={"details"}>
       <ul className={"details__container"}>
         <li className={"details__item"}>
           IP Address
@@ -24,7 +24,7 @@ const Details = ({ dataIp }) => {
           <span>{dataIp.isp}</span>
         </li>
       </ul>
-    </div>
+    </main>
   );
 };
 

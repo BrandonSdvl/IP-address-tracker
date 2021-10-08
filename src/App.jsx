@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.scss";
 import Details from "./components/Details/Details";
 import Error from "./components/Error/Error";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Loader from "./components/Loader/Loader";
 import Map from "./components/Map/Map";
@@ -73,6 +74,7 @@ function App() {
           )}
         </>
       )}
+      <Footer />
     </div>
   );
 }

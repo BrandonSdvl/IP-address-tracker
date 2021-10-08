@@ -23,7 +23,7 @@
         font-size: 25px;
 
         @include laptop {
-            font-size: 30px;
+            font-size: 31px;
         }
     }
 
@@ -46,6 +46,7 @@
         @include tablet {
             width: 60%;
             font-size: 18px;
+            padding: 17px 20px;
         }
 
         @include laptop {
@@ -70,7 +71,7 @@
         }
 
         @include tablet {
-            height: 52px;
+            height: 56px;
         }
     }
 }

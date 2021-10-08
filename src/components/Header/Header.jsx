@@ -29,7 +29,12 @@ const Header = ({ ip, setIp, getIpLocation }) => {
           value={ip}
           onChange={(e) => setIp(e.target.value)}
         />
-        <input type="submit" value="" className={"header__button"} />
+        <input
+          type="submit"
+          value=""
+          className={"header__button"}
+          title="Search"
+        />
       </form>
     </header>
   );

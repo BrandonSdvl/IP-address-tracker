@@ -1,0 +1,14 @@
+@import '../../sass/colors';
+
+.attribution {
+    color: $very-dark-gray;
+    font-size: 10px;
+    text-align: center;
+    margin: 10px 0;
+    transition: color 0.3s ease-in;
+
+    a {
+        color: $dark-gray;
+        text-decoration: none;
+    }
+}
