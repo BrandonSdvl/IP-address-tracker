@@ -19,8 +19,6 @@ const Map = ({ dataIp }) => {
     iconSize: [40, 50],
   });
 
-  console.log(coords);
-
   return (
     <MapContainer
       center={[coords.lat, coords.lng]}

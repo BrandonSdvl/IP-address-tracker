@@ -18,8 +18,6 @@ function App() {
     let res = await fetch(url);
     let json = await res.json();
 
-    console.log(url);
-
     let dataIp = {};
 
     if (
