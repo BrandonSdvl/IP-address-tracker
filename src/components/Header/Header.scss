@@ -1,4 +1,5 @@
 @import '../../sass/colors';
+@import '../../sass/breakpoints';
 
 .header {
     text-align: center;
@@ -20,6 +21,10 @@
         color: #fff;
         font-weight: 500;
         font-size: 25px;
+
+        @include laptop {
+            font-size: 30px;
+        }
     }
 
     &__form {
@@ -37,6 +42,14 @@
         border: none;
         border-radius: 15px 0 0 15px;
         outline: none;
+
+        @include tablet {
+            width: 60%;
+        }
+
+        @include laptop {
+            width: 35%;
+        }
     }
 
     &__button {

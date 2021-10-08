@@ -1,4 +1,5 @@
 @import '../../sass/colors';
+@import '../../sass/breakpoints';
 
 .details {
     background-color: #fff;
@@ -8,19 +9,39 @@
     margin-right: auto;
     margin-left: auto;
     border-radius: 15px;
-    list-style: none;
-    text-align: center;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-    flex-wrap: wrap;
-    gap: 20px;
     position: absolute;
     top: 140px;
     left: 0;
     right: 0;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.20);
+
+    @include laptop {
+        top: 165px;
+        width: 80%;
+    }
+
+    &__container {
+        width: 100%;
+        list-style: none;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin: 0;
+
+        @include tablet {
+            flex-direction: row;
+            text-align: left;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
+
 
     &__item {
         display: flex;
@@ -30,11 +51,38 @@
         color: $dark-gray;
         font-weight: 500;
 
+        @include tablet {
+            height: 100%;
+            width: 20%;
+            position: relative;
+        }
+
+        @include laptop {
+            font-size: 15px;
+        }
+
         span {
             margin-top: 5px;
             color: $very-dark-gray;
             text-transform: none;
             font-size: 18px;
+
+            @include laptop {
+                margin-top: 10px;
+                font-size: 23px;
+                font-weight: 700;
+            }
         }
+    }
+}
+
+.separator {
+    display: none;
+
+    @include tablet {
+        display: block;
+        width: 1px;
+        height: 80%;
+        background-color: $dark-gray;
     }
 }
